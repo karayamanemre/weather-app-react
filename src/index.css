@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #616162;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,7 +58,12 @@ form {
   gap: 25px;
 }
 
-h3 {
+main {
+  margin-top: 100px;
+}
+
+h3,
+h4 {
   font-size: 2.2em;
   line-height: 1.1;
 }
@@ -66,10 +71,6 @@ h3 {
 p {
   font-size: 1.2em;
   line-height: 1.1;
-}
-
-.weather {
-  margin-top: 100px;
 }
 
 input {
