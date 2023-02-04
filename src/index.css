@@ -26,14 +26,12 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
 
 input[type='text'],
 input[type='submit'] {
-  width: 100%;
   padding: 10px;
-  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -44,27 +42,15 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .switch {
-  font-size: 17px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5.2em;
-  height: 2em;
-  overflow: hidden;
+  display: inline-block;
+  width: 120px;
+  height: 34px;
 }
 
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 .slider {
@@ -74,54 +60,53 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #eee;
+  background-color: #616162;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 30px;
+  border-radius: 34px;
 }
 
 .slider:before {
   position: absolute;
   content: '';
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 20px;
-  border: 1px solid #333;
-  left: 0.4em;
-  bottom: 0.2em;
-  background-color: #fff;
-  transition: 0.4s;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #616162;
 }
 
 input:checked + .slider:before {
-  transform: translateX(3em);
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(86px);
 }
 
-.switch .text {
+/*------ ADDED CSS ---------*/
+.slider:after {
+  content: 'Celcius';
+  color: white;
+  display: block;
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
-  pointer-events: none;
-  text-transform: uppercase;
-  transform: translateY(-50%);
-  transition: 0.4s;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
 }
 
-.switch .text.f {
-  left: 0.8rem;
-  transform: translateX(-3rem) translateY(-50%);
+input:checked + .slider:after {
+  content: 'Fahrenheit';
 }
 
-.switch .text.c {
-  right: 0.8rem;
-}
-
-input:checked ~ .text.c {
-  transform: translateX(3rem) translateY(-50%);
-}
-
-input:checked ~ .text.f {
-  transform: translateX(0) translateY(-50%);
-}
-
+/*--------- END --------*/
 main {
   display: flex;
   align-items: center;
