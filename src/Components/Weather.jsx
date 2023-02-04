@@ -24,7 +24,16 @@ const Weather = (props) => {
 
   return (
     <main>
-      {loading && <h4>Loading...</h4>}
+      {loading && 
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+      </div>
+      }
       <div className="weather">
         {weather.main && (
           <div>
