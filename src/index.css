@@ -1,85 +1,147 @@
-:root {
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #616162;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
   min-height: 100vh;
 }
 
-span {
-  color: #242424;
-}
-
-.css-46bh2p-MuiCardContent-root {
-  background: #aaa;
-}
-
 header {
-  width: 100vw;
-  height: 80px;
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
-  left: 0;
-  background: #aaa;
-  box-shadow: rgba(0, 0, 0, 0.8) 0 2px 4px, rgba(0, 0, 0, 0.8) 0 7px 13px -3px,
-    rgba(0, 0, 0, 0.8) 0 -3px 0 inset;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 form {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+input[type='text'],
+input[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type='submit'] {
+  background-color: #616162;
+  color: #fff;
+  cursor: pointer;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2em;
+  height: 2em;
+  overflow: hidden;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  border: 1px solid #333;
+  left: 0.4em;
+  bottom: 0.2em;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(3em);
+}
+
+.switch .text {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.switch .text.f {
+  left: 0.8rem;
+  transform: translateX(-3rem) translateY(-50%);
+}
+
+.switch .text.c {
+  right: 0.8rem;
+}
+
+input:checked ~ .text.c {
+  transform: translateX(3rem) translateY(-50%);
+}
+
+input:checked ~ .text.f {
+  transform: translateX(0) translateY(-50%);
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-h3,
-h4 {
-  font-size: 2.2em;
-  line-height: 1.1;
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.1;
+.weather h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-input {
-  color: rgba(255, 255, 255, 0.87);
+.weather img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-  form {
-    padding: 10px;
-    gap: 5px;
-  }
+.weather p {
+  font-size: 18px;
+  margin: 5px 0;
 }

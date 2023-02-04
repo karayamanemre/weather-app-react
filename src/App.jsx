@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './App.css'
 import Header from './Components/Header'
 import Weather from './Components/Weather'
 
