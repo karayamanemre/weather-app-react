@@ -35,6 +35,10 @@ span {
   color: #242424;
 }
 
+.css-46bh2p-MuiCardContent-root {
+  background: #aaa;
+}
+
 header {
   width: 100vw;
   height: 80px;
@@ -45,8 +49,8 @@ header {
   top: 0;
   left: 0;
   background: #aaa;
-  box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 2px 4px, rgba(0, 0, 0, 0.8) 0 7px 13px -3px,
+    rgba(0, 0, 0, 0.8) 0 -3px 0 inset;
 }
 
 form {
@@ -72,15 +76,9 @@ input {
   color: rgba(255, 255, 255, 0.87);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+@media (max-width: 600px) {
+  form {
+    padding: 10px;
+    gap: 5px;
   }
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Card, CardContent, Typography } from '@mui/material';
 
 const Weather = (props) => {
   const [weather, setWeather] = useState({});
@@ -20,19 +21,19 @@ const Weather = (props) => {
   }, [props.city]);
 
   return (
-    <div className='weather'>
+    <Card className='weather'>
       {weather.main && (
-        <div>
-          <h3>{weather.name}</h3>
+        <CardContent>
+          <Typography variant="h5">{weather.name}</Typography>
           <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
-          <p>{weather.weather[0].description.charAt(0).toUpperCase() + weather.weather[0].description.slice(1)}</p>
-          <p>Temperature: {props.unit === 'C' ? Math.round(weather.main.temp) : Math.round((weather.main.temp * 9) / 5 + 32)}°{props.unit}</p>
-          <p>Minimum Temperature: {props.unit === 'C' ? Math.round(weather.main.temp_min) : Math.round((weather.main.temp_min * 9) / 5 + 32)}°{props.unit}</p>
-          <p>Maximum Temperature: {props.unit === 'C' ? Math.round(weather.main.temp_max) : Math.round((weather.main.temp_max * 9) / 5 + 32)}°{props.unit}</p>
-          <p>Humidity: {weather.main.humidity}%</p>
-        </div>
+          <Typography variant="subtitle1">{weather.weather[0].description.charAt(0).toUpperCase() + weather.weather[0].description.slice(1)}</Typography>
+          <Typography variant="body2">Temperature: {props.unit === 'C' ? Math.round(weather.main.temp) : Math.round((weather.main.temp * 9) / 5 + 32)}°{props.unit}</Typography>
+          <Typography variant="body2">Minimum Temperature: {props.unit === 'C' ? Math.round(weather.main.temp_min) : Math.round((weather.main.temp_min * 9) / 5 + 32)}°{props.unit}</Typography>
+          <Typography variant="body2">Maximum Temperature: {props.unit === 'C' ? Math.round(weather.main.temp_max) : Math.round((weather.main.temp_max * 9) / 5 + 32)}°{props.unit}</Typography>
+          <Typography variant="body2">Humidity: {weather.main.humidity}%</Typography>
+        </CardContent>
       )}
-    </div>
+    </Card>
   );
 };
 

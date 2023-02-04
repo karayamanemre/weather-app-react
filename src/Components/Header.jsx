@@ -10,21 +10,23 @@ const Header = (props) => {
 
   return (
     <header>
-      <form onSubmit={props.handleSubmit}>
-        <TextField name="city" label="Search City" variant="outlined" />
-        <Button type="submit" variant="contained">Search City</Button>
-        <FormControlLabel
-          control={
-            <Switch
-              defaultChecked
-              onChange={e => { props.handleToggle(e); toggleChecked(e) }}
-              value="unit"
-              color="primary"
-            />
-          }
-          label={`${checked? '°F':'°C'}`}
-        />
-      </form>
+      <div style={{ maxWidth: "600px", margin: "0 auto", textAlign: "center" }}>
+        <form onSubmit={props.handleSubmit} style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+          <TextField name="city" label="Search City" variant="outlined" style={{ width: "100%" }} />
+          <Button type="submit" variant="contained" style={{ width: "100%" }}>Search City</Button>
+          <FormControlLabel
+            control={
+              <Switch
+                defaultChecked
+                onChange={e => { props.handleToggle(e); toggleChecked(e) }}
+                value="unit"
+                color="primary"
+              />
+            }
+            label={`${checked? '°F':'°C'}`}
+          />
+        </form>
+      </div>
     </header>
   );
 };
