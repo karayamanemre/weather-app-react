@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Button, Switch, FormControlLabel } from '@mui/material';
+import { TextField, Button, Switch, FormControlLabel } from '@mui/material';
 
 const Header = (props) => {
   const [checked, setChecked] = React.useState(false);
@@ -11,7 +11,7 @@ const Header = (props) => {
   return (
     <header>
       <form onSubmit={props.handleSubmit}>
-        <Input type="text" name="city" placeholder="Enter a city name" />
+        <TextField name="city" label="Search City" variant="outlined" />
         <Button type="submit" variant="contained">Search City</Button>
         <FormControlLabel
           control={
@@ -22,7 +22,7 @@ const Header = (props) => {
               color="primary"
             />
           }
-          label={`${checked? '°C':'°F'}`}
+          label={`${checked? '°F':'°C'}`}
         />
       </form>
     </header>
