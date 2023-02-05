@@ -40,6 +40,12 @@ input[type='submit'] {
   background-color: #616162;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type='submit']:hover {
+  background-color: #ea6e4b;
 }
 
 .switch {
@@ -61,8 +67,8 @@ input[type='submit'] {
   right: 0;
   bottom: 0;
   background-color: #616162;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   border-radius: 34px;
 }
 
@@ -80,7 +86,7 @@ input[type='submit'] {
 }
 
 input:checked + .slider {
-  background-color: #616162;
+  background-color: #ea6e4b;
 }
 
 input:checked + .slider:before {
@@ -113,6 +119,7 @@ main {
 
 .weather-card {
   width: 320px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: center;

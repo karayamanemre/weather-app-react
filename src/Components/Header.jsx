@@ -5,7 +5,7 @@ const Header = (props) => {
     <header>
       <form onSubmit={props.handleSubmit}>
         <input type="text" name="city" placeholder="Search City"/>
-        <input type="submit" value="Search City"/>
+        <input type="submit" value="Search"/>
         <label class="switch">
           <input type="checkbox" onChange={props.handleToggle}/>
           <span class="slider"></span>
