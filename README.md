@@ -19,7 +19,7 @@
 - To run the project on your local machine, follow these steps:
 
 1. Clone the repository:
-   `git clone https://github.com/karayamanemre/weather-app-react.git``
+   `git clone https://github.com/karayamanemre/weather-app-react.git`
 
 2. Install the dependencies:
    `cd weather-react-project
