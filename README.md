@@ -22,8 +22,8 @@
    `git clone https://github.com/karayamanemre/weather-app-react.git`
 
 2. Install the dependencies:
-   `cd weather-react-project
-npm install`
+   `cd weather-react-project`
+   `npm install`
 
 3. Run the development server:
    `npm run dev`
@@ -31,8 +31,7 @@ npm install`
 ## Deployment
 
 - To build the production version of the project, run:
-
-`npm run build`
+  `npm run build`
 
 ## License
 
