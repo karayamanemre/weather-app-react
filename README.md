@@ -21,7 +21,7 @@
 1. Clone the repository:
    `git clone https://github.com/karayamanemre/weather-app-react.git`
 
-2. Install the dependencies:
+2. Go to the project folder and install the dependencies:
    `cd weather-app-react`
    `npm install`
 
