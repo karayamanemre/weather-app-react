@@ -1,58 +1,29 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
+@import url('https://use.typekit.net/pia5fbw.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'basic-sans', sans-serif;
+}
+
+html {
+  background: #ddd;
+  padding: 25px;
 }
 
 body {
-  min-height: 100vh;
-  background: #616162;
-}
-
-header {
   display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  height: 80px;
-  background: #fff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-}
-
-input[type='text'],
-input[type='submit'] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-input[type='submit'] {
-  background-color: #616162;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-input[type='submit']:hover {
-  background-color: #ea6e4b;
 }
 
 .switch {
   position: relative;
   display: inline-block;
   width: 80px;
-  height: 34px;
+  height: 40px;
 }
 
 .switch input {
@@ -60,25 +31,27 @@ input[type='submit']:hover {
 }
 
 .slider {
+  font-family: 'basic-sans', sans-serif;
+  font-weight: 700;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #616162;
+  background-color: #ea580c;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 34px;
+  border-radius: 40px;
 }
 
 .slider:before {
   position: absolute;
   content: '';
-  height: 26px;
-  width: 26px;
+  height: 28px;
+  width: 28px;
   left: 4px;
-  bottom: 4px;
+  bottom: 6px;
   background-color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -86,13 +59,13 @@ input[type='submit']:hover {
 }
 
 input:checked + .slider {
-  background-color: #ea6e4b;
+  background-color: #c2410c;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(46px);
-  -ms-transform: translateX(46px);
-  transform: translateX(46px);
+  -webkit-transform: translateX(45px);
+  -ms-transform: translateX(45px);
+  transform: translateX(45px);
 }
 
 .slider:after {
@@ -108,46 +81,6 @@ input:checked + .slider:before {
 
 input:checked + .slider:after {
   content: '°F';
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.weather-card {
-  width: 320px;
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  padding: 20px;
-  align-items: center;
-  border-radius: 5px;
-  background: #ddd;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.weather img {
-  width: 80px;
-  height: 80px;
-}
-
-.weather-info {
-  width: 90%;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align-last: justify;
-}
-
-.weather p {
-  font-size: 18px;
 }
 
 .wrapper {
