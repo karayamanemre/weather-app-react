@@ -23,7 +23,7 @@ const Weather = (props) => {
   }, [props.city]);
 
   return (
-    <main class="container w-full bg-gray-300 flex flex-col items-center justify-center p-6 rounded-xl mt-10 shadow-xl border-2 border-gray-200">
+    <main class="container w-full bg-gray-300 flex flex-col items-center justify-center p-6 rounded-xl mt-8 shadow-xl border-2 border-gray-200">
       {loading && 
         <div class="wrapper">
           <div class="circle"></div>

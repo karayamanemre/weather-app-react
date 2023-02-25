@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from './Components/Footer';
 import Header from './Components/Header'
 import Weather from './Components/Weather'
 
@@ -19,6 +20,7 @@ function App() {
     <div>
       <Header handleSubmit={handleSubmit} handleToggle={handleToggle} />
       <Weather city={city} unit={unit} />
+      <Footer></Footer>
     </div>
   );
 }
