@@ -1,38 +1,143 @@
-# Weather App
+<a name="readme-top"></a>
 
-## Introduction
+# 📗 Table of Contents
 
-- This weather app React project is built using [Vite](https://vitejs.dev/), a fast and optimized frontend development build tool, and [OpenWeather API](https://openweathermap.org/api) to retrieve weather information for various cities.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Features
+# 📖 Weather App <a name="about-project"></a>
 
-- Search a city: The user can search for the current weather conditions in a specific city.
-- Change the units: The user can toggle between Celsius and Fahrenheit units to display the temperature.
+- This weather app React project is built using Vite, a fast and optimized frontend development build tool, and OpenWeather API to retrieve weather information for various cities.
 
-## Requirements
+## 🛠 Built With <a name="built-with"></a>
 
-- Node.js
-- npm
+### Tech Stack <a name="tech-stack"></a>
 
-## Setup
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://vitejs.dev/">ViteJS</a></li>
+    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
+  </ul>
+</details>
+<details>
+<summary>API</summary>
+  <ul>
+    <li><a href="https://openweathermap.org/api">OpenWeatherMap</a></li>
+  </ul>
+</details>
 
-- To run the project on your local machine, follow these steps:
+### Key Features <a name="key-features"></a>
 
-1. Clone the repository:
-   `git clone https://github.com/karayamanemre/weather-app-react.git`
+- **View weather information**
+- **Switch between Celsius and Fahrenheit**
+- **Search for cities**
 
-2. Go to the project folder and install the dependencies:
-   `cd weather-app-react`
-   `npm install`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-3. Run the development server:
-   `npm run dev`
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Deployment
+- [Weather App](https://weather-react-karayamanemre.netlify.app/)
 
-- To build the production version of the project, run:
-  `npm run build`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## 💻 Getting Started <a name="getting-started"></a>
 
-- This project is licensed under the MIT License.
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+Node.js - You'll need to have Node.js installed on your system. You can download it from the official website.
+
+### Setup
+
+First, clone the Github repository to your local machine. You can do this by running the following command in your terminal:
+
+```sh
+  git clone https://github.com/karayamanemre/weather-app-react.git
+```
+
+### Install
+
+Navigate to the project directory in your terminal and run the following command to install the app's dependencies:
+
+```sh
+  npm install
+```
+
+### Usage
+
+To start the app, run the following command in your terminal:
+
+```sh
+  npm start
+```
+
+### Build
+
+To build the app for production, run the following command in your terminal:
+
+```sh
+  npm run build
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Emre Karayaman**
+
+- GitHub: [karayamanemre](https://github.com/karayamanemre)
+- LinkedIn: [Emre Karayaman](https://www.linkedin.com/in/emre-karayaman-a7b45b243/)
+- Twitter: [@KarayamanEmre](https://twitter.com/KarayamanEmre)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Save and view favorite cities.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+- If you like this project please give it a star ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+-
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
