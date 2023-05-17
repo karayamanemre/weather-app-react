@@ -23,7 +23,7 @@
 
 # 📖 Weather App <a name="about-project"></a>
 
-- This weather app React project is built using Vite, a fast and optimized frontend development build tool, and OpenWeather API to retrieve weather information for various cities.
+- This weather app provides real-time weather information for various cities. It features a handy option to switch between Celsius and Fahrenheit, making it adaptable to user preferences.
 
 ## 🛠 Built With <a name="built-with"></a>
 
